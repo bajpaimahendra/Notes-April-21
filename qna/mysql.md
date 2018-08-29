@@ -1,4 +1,4 @@
-### Q1- What is difference between dattime and timestamp datatype in mysql ?
+#### Q1- What is difference between dattime and timestamp datatype in mysql ?
 	https://blog.sqlauthority.com/2014/02/14/mysql-when-to-use-timestamp-or-datetime-difference-between-timestamp-or-datetime/
 	http://www.tech-recipes.com/rx/22599/mysql-datetime-vs-timestamp-data-type/
 	
@@ -10,7 +10,7 @@
 
 	Note : if your application is timezone independent, you should use TIMESTAMP. (e.g forum)
 
-### Q - What is the difference between Primary key and Unique key ?
+#### Q - What is the difference between Primary key and Unique key ?
 	
 	Both are used to uniquly identify a row.
 	but primary key must not NULL.
@@ -18,12 +18,12 @@
 	A table can have multiple UNIQUE key but  can only one PRIMARY key.
 	Primary Key creates a clustered index of column where as an Unique creates unclustered index of column
 
-### Q - What is the difference between primary key and candidate key ?
+#### Q - What is the difference between primary key and candidate key ?
 	Primary Key is also a candidate key.
 	By common convention, candidate key can be designated as primary and which can be used for any foreign key references.
 
 
-### Q - What are indexes in a Database. What are the types of indexes ?
+#### Q - What are indexes in a Database. What are the types of indexes ?
 	Indexes are the quick references of data for fast data retrieval  from a database.
 	There are two different kinds of indexes.
 	
@@ -35,7 +35,7 @@
 	1- Can be used many times per table.
 	2- Quicker for insert and update operations than a clustered index.
 	
-### Q - How many TRIGGERS are possible in MySql ?
+#### Q - How many TRIGGERS are possible in MySql ?
 	There are only six triggers are allowed to use in MySQL database and they are.
 	1- Before Insert
 	2- After Insert
@@ -44,7 +44,7 @@
 	5- Before Delete
 	6- After Delete
 
-### Q - What is Heap table ?
+#### Q - What is Heap table ?
 	1- Tables that are present in the memory are called as HEAP tables.
 	2- These tables are commonly known as memory tables.
 	3- These memory tables never have values with data type like “BLOB” or “TEXT”.
@@ -53,15 +53,15 @@
 	6- used for high speed storage on temporary basis.
 	7- AUTO_INCREMENT is not supported by HEAP tables
 
-### Q - How to store picture file in the database. What Object type is used?
+#### Q - How to store picture file in the database. What Object type is used?
 	To store picture in a database, Type ‘Blob’ is recommended.
 
-### Q - What is meant by transaction and ACID properties ?
+#### Q - What is meant by transaction and ACID properties ?
 	//ToDo
 
 
 
-### Q - How will you get the Field Name and Type of a MySql table ?
+#### Q - How will you get the Field Name and Type of a MySql table ?
 	mysql> describe users; 
 
 	+----------+--------------+------+-----+---------+-------+ 
@@ -72,7 +72,7 @@
 	+----------+--------------+------+-----+---------+-------+ 
 	2 rows in set (0.00 sec)
 
-### Q - Total number of row entry in a table ?
+#### Q - Total number of row entry in a table ?
 	
 	mysql> select count(*) from Users; 
 
@@ -82,8 +82,8 @@
 	|      282 | 
 	+----------+ 
 	1 row in set (0.01 sec)
-
-### https://phpgurukul.com/mysql-interview-questions-and-answers/
+===============================================================================
+#### https://phpgurukul.com/mysql-interview-questions-and-answers/
 
 ### Q - What is join in SQL ?
 	Join  are used to fetch data from one or more tables
@@ -145,7 +145,7 @@
 
 ### Q - Is Mysql query is case sensitive ?
 	
-################################################################################################################
+==========================================================================
 
 ### Q - How will you login to MySQL from Linux Shell ?
 	root@localhost:/home/avi# mysql -u root -p 
@@ -192,7 +192,7 @@
 	$ service mysql stop
 	$ service mysql start
 
-######################################  Backup/Restore  ###################################################
+==============  Backup/Restore ==========================
 
 ### Q - How to Backup MySQL Database ?
 	https://www.tecmint.com/mysql-backup-and-restore-commands-for-database-administration/	
@@ -229,16 +229,24 @@
 	
 	mysqlimport -u root -p tecmint dbName < dbName.sql
 
-#############################################################################################################
-(1) Show the total amount of storage being used by each database under MySQL… organized by owner.
-(2) List the indexes for all tables in database “Sales”… and show me any tables which do not have indexes.
-(3) If MySQL database service is Not running, where do you look for problems/errors to correct.
-(4) If MySQL is not running, how do you find disk storage used by MySQL …storage FREE/avail for MySQL?
-(5) List all active connections to running MySQL DB… and what can you know about activity…
-(6) Discuss steps to move/copy a MySQL database from ServerA to ServerB ?
-(7) Comment on setup of ServerJ and ServerK for load balancing & fail-over operation, so BOTH stay updated?
-(8) Describe steps to backup or restore data/tables/index for database “blue” with other databases still running?
-###################################################################################################################
+==================================================================================================
+	(1) Show the total amount of storage being used by each database under MySQL… organized by owner.
+
+	(2) List the indexes for all tables in database “Sales”… and show me any tables which do not have indexes.
+
+	(3) If MySQL database service is Not running, where do you look for problems/errors to correct.
+
+	(4) If MySQL is not running, how do you find disk storage used by MySQL …storage FREE/avail for MySQL ?
+
+	(5) List all active connections to running MySQL DB… and what can you know about activity…
+
+	(6) Discuss steps to move/copy a MySQL database from ServerA to ServerB ?
+
+	(7) Comment on setup of ServerJ and ServerK for load balancing & fail-over operation, so BOTH stay updated ?
+
+	(8) Describe steps to backup or restore data/tables/index for database “blue” with other databases still running ?
+
+###################################################################################################
 ### Q - Define SQL ?
 	SQL stands for Structured Query Language
 	for managing data in Relational Database Management System (RDBMS).
@@ -251,7 +259,6 @@
 ### Q - What is an ER Diagram ?	
 	Entity Relationship Diagram is the graphical representation of tables, with the relationship between them.
 
-### Q - 
 
 
 
