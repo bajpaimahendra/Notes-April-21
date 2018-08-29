@@ -1,0 +1,69 @@
+
+### diffmerge settings
+
+$ git config --global diff.tool diffmerge
+$ git config --global difftool.diffmerge.cmd "/usr/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+$ git config --global mergetool.keepBackup false
+$ git config --global merge.tool diffmerge
+$ git config --global mergetool.diffmerge.trustExitCode true
+$ git config --global mergetool.diffmerge.cmd "/usr/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+--- --------------- Operation ---------------------------------------------
+	/var/www/lumenRestApi$ git init
+	/var/www/lumenRestApi$ git status
+Add File To Staging Area
+	/var/www/lumenRestApi$ git add -A stages All
+	/var/www/lumenRestApi$ git add . stages new and modified, without deleted
+	/var/www/lumenRestApi$ git add -u stages modified and deleted, without new
+Remove File From Staging Area
+	/var/www/lumenRestApi$ git reset calc.php
+Save Added Files To Local Repository
+	/var/www/lumenRestApi$ git commit -m 'Initial Commit'/var/www/lumenRestApi$ git push -u origin master
+Push master Branch To Remote Repository
+	/var/www/lumenRestApi$ git push -u origin master
+
+View Remote Repository
+	/var/www/lumenRestApi$ git remote -v
+	$ git remote add origin https://github.com/bajpaimahendra/lumenRestApi.git
+
+
+
+
+git status
+git add . ( add all files )
+git commit -m ' initial commmit '
+git push -u origin master
+
+git branch < branchName >
+git branch ( list local branches )
+git branch -a ( list all local & remote branches )
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+--------------------------- create new branch in local track the newly create remote branch-------------------------------------------------------
+git fetch
+git branch --track branch-name origin/branch-name
+
+
+
+
+
+
+
+
+

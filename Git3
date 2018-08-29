@@ -1,0 +1,97 @@
+git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset)%C(green)(%ar)%C(reset)%n%''         %C(yellow)%d%C(reset)%C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)' --all"
+
+--- -----------------------------------------------------------------------------------
+https://www.tutorialspoint.com/git/index.htm
+
+	sudo apt-get install git	( Install )
+	git --version			( check version )
+	git config --list		( check configuration )
+
+== Customize Git Environment ==========================
+	
+	$ git config --global user.name "Mahendra"
+	$ git config --global user.email "mahendra.bajpai@vrnsys.com"
+
+	git config --global branch.autosetuprebase always ( Avoid merge commits for pulling )
+
+	Color highlighting
+		$ git config --global color.ui true
+		$ git config --global color.status auto
+		$ git config --global color.branch auto
+	Setting default editor
+		$ git config --global core.editor vim
+	Setting default merge tool
+		$ git config --global merge.tool vimdiff
+
+=== Operation =======================================
+1- git init  or git clone
+
+2- git status 			( status of current branch )
+
+3- git fetch origin feature1
+
+4- git difftool origin/future1   ( check defference from current branch )
+
+5- git merge origin/future1 ( merge to current branch from remote branch )
+
+6- git mergetool ( launch merge tool to resalve confilict )
+
+7- git push <remote> <branch>	( push perticula branch to remote repositry )
+	git push origin develop 
+	git push -u origin develop (first time only to set upstrem)
+ 
+8- git checkout develop  ( swithch to branch )
+
+=== git log =========================================
+git fetch origin
+git log origin/feature1  --oneline   ( log of remote branch )
+
+=== change origin ===
+	git remote set-url origin https://mahendravrn@bitbucket.org/visitatvishal82/tawarmall.git 
+
+
+
+===============================  UnDo the changes   ==============================
+how merge individual file from remote
+
+git fetch origin
+git checkout origin/develop -- resources/views/booking/billing/pdfinvoice.blade.php ( get code From  develop branch of repo )
+git checkout resources/views/booking/billing/pdfinvoice.blade.php ( revert changes in locally )
+
+git checkout 3ef0d...
+
+=================  ### Show Current  Branch In Terminal ===================================
+paste below code in /home/bajpai/.bashrc
+
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+#export PS1="\u@\h \[\033[33m\]\$(parse_git_branch)\[\033[00m\] ${debian_chroot:+($debian_chroot)}\w $ "
+
+#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h : \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\]▶ \$ \[\033[0m\]'
+
+
+==================================================================================================================================
+
+
+To go back to a certain state of the project, use the git checkout command and provide the commit identifier.
+
+    git log
+    git checkout 4ea35ab9d43a8d6521bace280ae24477f799f132
+
+However, you actually don’t need to use the full length of identifier. Usually the first 5 characters are enough:
+
+    git checkout 8d7e4e8
+
+
+
+
+
+
