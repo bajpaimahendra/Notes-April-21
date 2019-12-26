@@ -1,27 +1,5 @@
 git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset)%C(green)(%ar)%C(reset)%n%''         %C(yellow)%d%C(reset)%C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)' --all"
 
---- -----------------------------------------------------------------------------------
-https://www.tutorialspoint.com/git/index.htm
-
-	sudo apt-get install git	( Install )
-	git --version			( check version )
-	git config --list		( check configuration )
-
-== Customize Git Environment ==========================
-	
-	$ git config --global user.name "Mahendra"
-	$ git config --global user.email "mahendra.bajpai@vrnsys.com"
-
-	git config --global branch.autosetuprebase always ( Avoid merge commits for pulling )
-
-	Color highlighting
-		$ git config --global color.ui true
-		$ git config --global color.status auto
-		$ git config --global color.branch auto
-	Setting default editor
-		$ git config --global core.editor vim
-	Setting default merge tool
-		$ git config --global merge.tool vimdiff
 
 === Operation =======================================
 1- git init  or git clone
@@ -60,25 +38,7 @@ git checkout resources/views/booking/billing/pdfinvoice.blade.php ( revert chang
 
 git checkout 3ef0d...
 
-=================  ### Show Current  Branch In Terminal ===================================
-paste below code in /home/bajpai/.bashrc
 
-
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
-#export PS1="\u@\h \[\033[33m\]\$(parse_git_branch)\[\033[00m\] ${debian_chroot:+($debian_chroot)}\w $ "
-
-#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-#export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-
-PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h : \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\]▶ \$ \[\033[0m\]'
-
-
-==================================================================================================================================
 
 
 To go back to a certain state of the project, use the git checkout command and provide the commit identifier.
