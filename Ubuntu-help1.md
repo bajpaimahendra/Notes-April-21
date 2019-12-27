@@ -1,32 +1,4 @@
 
-### cron tab --------------------------------------
-	crontab -e    Edit your crontab file, or create one if it doesn’t already exist.
-	crontab -l      Display your crontab file.
-	crontab -r      Remove your crontab file.
-	crontab -v      Display the last time you edited your crontab file. (This option is only available on a few systems.)
----------------------------------------------------
-
-### install microsoft fonts -------
-
-	sudo apt-get install msttcorefonts
-	use arrow key to select <ok>
-
-### Show Hidden Files -------------------
-	Ctri + H
-
-### set the permissions recursively -----------
-	sudo chmod -R 777 /var/www
-
-### Search Command in history -------------------
-	Ctrl + R
-### Associate file type with default editor ---------------------------------
-     open a file with another application using the 'mimeopen' command in the terminal.
-     mimeopen -d Recipes.php
-     Simply choose the number that corresponds
-
-### Install  postman  ------------------------------------------
-	https://www.getpostman.com/docs/postman/launching_postman/installation_and_updates
-
 ### Sublime Text 3 ----------------------------------------
 
 	http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/
@@ -34,19 +6,7 @@
 	https://github.com/buymeasoda/soda-theme
 	Espresso Soda ( color scheme )
 
-### MySQL Workbench --------------------------------------
 
-	https://www.linode.com/docs/databases/mysql/install-and-configure-mysql-workbench-on-ubuntu
-
-	sudo apt install mysql-workbench
-	mysql-workbench  (  Launch MySQL Workbench from the terminal)
-
-### Install Java -------------------------------------------
-    https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/
-
-    sudo add-apt-repository ppa:webupd8team/java
-    sudo apt-get update
-    sudo apt-get install oracle-java8-installer
 
 ### Install google Chrome ----------------------------------------
 	echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
