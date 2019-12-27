@@ -1,15 +1,4 @@
 
-### diffmerge settings
-
-$ git config --global diff.tool diffmerge
-$ git config --global difftool.diffmerge.cmd "/usr/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
-$ git config --global mergetool.keepBackup false
-$ git config --global merge.tool diffmerge
-$ git config --global mergetool.diffmerge.trustExitCode true
-$ git config --global mergetool.diffmerge.cmd "/usr/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
 
 --- --------------- Operation ---------------------------------------------
 	/var/www/lumenRestApi$ git init
@@ -40,29 +29,6 @@ git push -u origin master
 git branch < branchName >
 git branch ( list local branches )
 git branch -a ( list all local & remote branches )
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
---------------------------- create new branch in local track the newly create remote branch-------------------------------------------------------
-git fetch
-git branch --track branch-name origin/branch-name
-
-
-
-
-
 
 
 
