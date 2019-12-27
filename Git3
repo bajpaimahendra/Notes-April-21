@@ -1,5 +1,3 @@
-git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset)%C(green)(%ar)%C(reset)%n%''         %C(yellow)%d%C(reset)%C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)' --all"
-
 
 === Operation =======================================
 1- git init  or git clone
@@ -19,17 +17,6 @@ git config --global alias.lg "log --graph --abbrev-commit --decorate --pretty=fo
 	git push -u origin develop (first time only to set upstrem)
  
 8- git checkout develop  ( swithch to branch )
-
-
-
-===============================  UnDo the changes   ==============================
-how merge individual file from remote
-
-git fetch origin
-git checkout origin/develop -- resources/views/booking/billing/pdfinvoice.blade.php ( get code From  develop branch of repo )
-git checkout resources/views/booking/billing/pdfinvoice.blade.php ( revert changes in locally )
-
-git checkout 3ef0d...
 
 
 
