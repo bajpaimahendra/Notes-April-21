@@ -30,9 +30,6 @@
 	Downloads$ ./netbeans-8.2-php-linux-x64.sh
 
 
-### To move the launcher Bottom of the screen again -------------------
-	gsettings set com.canonical.Unity.Launcher launcher-position Bottom
-
 ### Install Vlc player -------
 	sudo apt update
 	sudo apt install vlc
