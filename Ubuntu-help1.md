@@ -25,9 +25,6 @@
 
 	gsettings set org.gnome.nautilus.preferences always-use-location-entry  true
 
-### Install NetBean --------------------------------------
-	Downloads$ chmod +x netbeans-8.2-php-linux-x64.sh
-	Downloads$ ./netbeans-8.2-php-linux-x64.sh
 
 
 ### Install Vlc player -------
