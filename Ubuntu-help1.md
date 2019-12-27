@@ -1,35 +1,4 @@
 
-### Sublime Text 3 ----------------------------------------
-
-	http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/
-
-	https://github.com/buymeasoda/soda-theme
-	Espresso Soda ( color scheme )
-
-
-
-### Install google Chrome ----------------------------------------
-	echo "deb http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-	wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-	sudo apt update
-	sudo apt install google-chrome-stable
-	
-### downgrade firefox --------------------------------------------
-	sudo apt-get purge firefox
-	wget sourceforge.net/projects/ubuntuzilla/files/mozilla/apt/pool/main/f/firefox-mozilla-build/firefox-mozilla-build_39.0.3-0ubuntu1_amd64.deb
-	
-	sudo dpkg -i firefox-mozilla-build_39.0.3-0ubuntu1_amd64.deb
-
-### Switch from path bar to location bar permanently in Nautilus ----------
-	http://askubuntu.com/questions/101100/switch-from-path-bar-to-location-bar-permanently-in-nautilus
-
-	gsettings set org.gnome.nautilus.preferences always-use-location-entry  true
-
-
-
-### Install Vlc player -------
-	sudo apt update
-	sudo apt install vlc
 
 ### About Linux --------------------------------------------------------
  HISTORY---https://en.wikipedia.org/wiki/Linux
