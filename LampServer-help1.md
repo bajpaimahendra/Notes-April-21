@@ -57,31 +57,6 @@
 		sudo gedit /etc/php5/apache2/php.ini
 		and extension=mongo.so in php.ini
 
-### Virtual Host -----------------------------
-
-	1- sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/ci.localhost.conf
-	2- sudo gedit /etc/apache2/sites-available/ci.localhost.conf (----- to change host name ------)
-
-<VirtualHost *:80>
-    #ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "/Applications/myhtdocs/pyo/businessdemo/html"
-    ServerName businessdemo.local
-	 <Directory "/Applications/myhtdocs/pyo/businessdemo/html">
-	    Options Indexes FollowSymLinks
-	    AllowOverride All
-	    Require all granted
-	</Directory>
-	#AccessFileName .htaccess
-    #ErrorLog "logs/dummy-host2.example.com-error_log"
-    #CustomLog "logs/dummy-host2.example.com-access_log" common
-</VirtualHost>
-
-	3-sudo gedit /etc/hosts ( for host entry)
-	4-sudo a2ensite ci.localhost ( to enable site )
-	5-sudo /etc/init.d/apache2 restart ( to restart apache )
-
-
-sudo gedit /etc/apache2/sites-available/000-default.conf
 
 
 
